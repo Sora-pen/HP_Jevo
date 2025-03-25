@@ -126,25 +126,26 @@ header {
         display: flex;
         color: #414141;
         z-index: 1;
-        margin-right: 30px;
-        height:60%;
+        height:100%;
         width:25%;
     }
 
         .pickup p{
             letter-spacing: 10px;
             writing-mode: vertical-rl; 
-            font-size:calc();
+            font-size:30px;
         }
 
             .p1{
                 order:2;
-                margin-bottom: 30%;
+                margin-top: auto;
+                margin-bottom: 60%;
             }
 
             .p2{
                 order: 1;
-                margin-top:30%;
+                margin-top:auto;
+                margin-bottom:5%;
                 margin-right:5%;
             }
 
@@ -166,7 +167,7 @@ header {
         border:5px solid #ADADAD;
         border-radius: 30px;
         background-color: white;
-    
+
     }
 
         .lesson h2{
@@ -233,10 +234,12 @@ header {
 
 /* ライン予約 */
 .btn-rsv a{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin:50px auto;
-    width:fit-content;
-    padding:30px 130px;
+    max-width: 400px;
+    height: 80px;
     font-size:24px;
     color:white;
     background-color: #3DC713;
@@ -263,6 +266,11 @@ footer{
 
 /* 詳細情報 */
 @media screen and (max-width:800px){
+
+    .pickup p{
+        font-size:20px;
+    }
+
     .detail{
         flex-direction: column;
         justify-content: center;
